@@ -74,12 +74,12 @@ TARGET_DISPLAY_USE_RETIRE_FENCE := true
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # Hardware tunables
-BOARD_HARDWARE_CLASS := device/lge/v500/cmhw/
+BOARD_HARDWARE_CLASS := device/lge/v500/mkhw/
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/knock_on"
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/lge/v500
-TARGET_KERNEL_CONFIG := lineageos_v500_defconfig
+TARGET_KERNEL_CONFIG := mokee_v500_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 ehci-hcd.park=3 lpj=67677 androidboot.hardware=awifi vmalloc=400M
 BOARD_KERNEL_BASE := 0x80200000
